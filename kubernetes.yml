@@ -21,8 +21,8 @@ spec:
         ports:
         - containerPort: 5000
 ---
-kind: Service
 apiVersion: v1
+kind: Service
 metadata:
   name: hello-cloudbuild
 spec:
