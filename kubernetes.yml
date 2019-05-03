@@ -21,15 +21,15 @@ spec:
         ports:
         - containerPort: 5000
 ---
-kind: Service
 apiVersion: v1
+kind: Service
 metadata:
   name: hello-cloudbuild
 spec:
+  type: LoadBalancer
   selector:
     app: hello-cloudbuild
   ports:
   - protocol: TCP
     port: 80
     targetPort: 5000
-type: LoadBalancer
