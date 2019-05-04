@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: hello-cloudbuild
-        image: gcr.io/fpt-fti/hello-app:52ffa56
+        image: gcr.io/fpt-fti/hello-app:763e801
         ports:
         - containerPort: 5000
 ---
